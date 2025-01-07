@@ -15,9 +15,24 @@ body {
 .container {
   display: flex;
   .left {
+    padding-top: 20px;
     width: 20%;
     height: calc(100dvh - 9dvh);
-    background-color: red;
+    padding-left: 6px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .melo-btn {
+      width: 20px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      appearance: none;
+      border: none;
+    }
   }
   .right {
     width: 20%;
@@ -27,6 +42,7 @@ body {
   .middle {
     flex: 1;
     height: calc(100dvh - 9dvh);
+    height: 1000px;
     background-color: rgb(60, 19, 194);
   }
 }
