@@ -5,7 +5,9 @@ body{
     color: white;
 }
 .container{
+    background-color: gray;
     display: flex;
+    margin-top: 12dvh;
 }
 .left{
     width: 20%;
@@ -72,8 +74,8 @@ body{
 }
 .right{
     width: 20%;
-    /* height: calc(100dvh - 12dvh); */
-    height: 1000px;
+    height: calc(100dvh - 12dvh);
+    
     background-color: red;
 }
 
