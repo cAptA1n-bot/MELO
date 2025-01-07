@@ -1,80 +1,70 @@
-body{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-.container{
-    display: flex;
-}
-.left{
-    width: 20%;
-}
-.right{
-    width: 20%;
-}
-.middle{
-    flex: 1;
-}
-.dp{
-    width: 40px;
-    height: 40px;
-    
-}
-.navbar{
-    display: flex;
-    
-    align-items: center;
-    height: 12dvh;
-}
-.input{
-    width: 60%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(37, 37, 37);
-    color: white;
-    &::placeholder{
-        color: rgb(123, 120, 120);
-    }
-}
-.logo{
-    padding-left: 10px;
-    width: 20%;
-}
-.searchbar{
-    flex: 1;
-}
-.profile{
-    width: 20%;
-
-}
-.box{
-    padding-right: 10px;
-    display: flex;
-    justify-content: end;
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.left{
+body {
+  font-family: "Outfit", serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  display: flex;
+  .left {
     width: 20%;
-    height: calc(100dvh - 12dvh);
+    height: calc(100dvh - 9dvh);
     background-color: red;
-}
-
-.middle{
+  }
+  .right {
+    width: 20%;
+    height: calc(100dvh - 9dvh);
+    background-color: red;
+  }
+  .middle {
     flex: 1;
-    height: calc(100dvh - 12dvh);
+    height: calc(100dvh - 9dvh);
     background-color: rgb(60, 19, 194);
+  }
 }
-.right{
-    width: 20%;
-    height: calc(100dvh - 12dvh);
-    background-color: red;
+.dp {
+  width: 40px;
+  height: 40px;
 }
-.main{
-    display: relative;
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 9dvh;
+  position: sticky;
+  backdrop-filter: blur(80px);
+  top: 0;
 }
-.navbar{
-    display: absolute;
+.input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  &::placeholder {
+    color: rgb(123, 120, 120);
+  }
+}
+.logo {
+  padding-left: 10px;
+  width: 20%;
+}
+.searchbar {
+  flex: 1;
+}
+.profile {
+  width: 20%;
+}
+.box {
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
 }
