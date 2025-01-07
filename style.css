@@ -8,6 +8,7 @@ body{
     background-color: gray;
     display: flex;
     margin-top: 12dvh;
+    margin-bottom: 10dvh;
 }
 .left{
     width: 20%;
@@ -63,19 +64,27 @@ body{
 
 .left{
     width: 20%;
-    height: calc(100dvh - 12dvh);
+    height: calc(100dvh - 12dvh - 10dvh);
     background-color: red;
 }
 
 .middle{
     flex: 1;
-    height: calc(100dvh - 12dvh);
+    height: calc(100dvh - 12dvh - 10dvh);
     background-color: rgb(60, 19, 194);
 }
 .right{
     width: 20%;
-    height: calc(100dvh - 12dvh);
+    height: calc(100dvh - 12dvh - 10dvh);
     
     background-color: red;
+}
+.playbar{
+    position: fixed;
+    width: 100%;
+    height: 10dvh;
+    bottom: 0;
+    display: flex;
+    background-color: black;
 }
 
