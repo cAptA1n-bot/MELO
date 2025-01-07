@@ -23,7 +23,10 @@ body{
 }
 .navbar{
     display: flex;
-    
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
     align-items: center;
     height: 12dvh;
 }
@@ -69,12 +72,8 @@ body{
 }
 .right{
     width: 20%;
-    height: calc(100dvh - 12dvh);
+    /* height: calc(100dvh - 12dvh); */
+    height: 1000px;
     background-color: red;
 }
-.main{
-    display: relative;
-}
-.navbar{
-    display: absolute;
-}
+
