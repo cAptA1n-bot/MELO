@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.grytxt {
+  font-size: 0.55em;
+  color: rgb(184, 181, 181);
+}
+
 body {
   font-family: "Outfit", serif;
   background-color: black;
@@ -19,7 +24,7 @@ body {
     width: 20%;
     height: calc(100dvh - 9dvh);
     padding-left: 6px;
-    gap: 10px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 
