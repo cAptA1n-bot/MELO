@@ -7,6 +7,7 @@
 .grytxt {
   font-size: 0.55em;
   color: rgb(184, 181, 181);
+
 }
 
 body {
@@ -99,3 +100,4 @@ body {
   display: flex;
   justify-content: end;
 }
+
