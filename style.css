@@ -1,90 +1,103 @@
-body{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    color: white;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.container{
-    background-color: gray;
-    display: flex;
-    margin-top: 12dvh;
-    margin-bottom: 10dvh;
+
+.grytxt {
+  font-size: 0.55em;
+  color: rgb(184, 181, 181);
+
 }
-.left{
+
+body {
+  font-family: "Outfit", serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.circle {
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+}
+
+.container {
+  display: flex;
+  .left {
+    padding-top: 20px;
     width: 20%;
-}
-.right{
-    width: 20%;
-}
-.middle{
-    flex: 1;
-}
-.dp{
-    width: 40px;
-    height: 40px;
-    
-}
-.navbar{
+    height: calc(100dvh - 9dvh);
+    padding-left: 20px;
+    gap: 15px;
     display: flex;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    height: 12dvh;
-}
-.input{
-    width: 60%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(37, 37, 37);
-    color: white;
-    &::placeholder{
-        color: rgb(123, 120, 120);
+    flex-direction: column;
+
+    .melo-btn {
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      appearance: none;
+      border: none;
+
+      img {
+        width: 20px;
+      }
     }
-}
-.logo{
-    padding-left: 10px;
+  }
+  .right {
     width: 20%;
-}
-.searchbar{
-    flex: 1;
-}
-.profile{
-    width: 20%;
-
-}
-.box{
-    padding-right: 10px;
-    display: flex;
-    justify-content: end;
-
-}
-
-.left{
-    width: 20%;
-    height: calc(100dvh - 12dvh - 10dvh);
+    height: calc(100dvh - 9dvh);
     background-color: red;
-}
-
-.middle{
+  }
+  .middle {
     flex: 1;
-    height: calc(100dvh - 12dvh - 10dvh);
+    height: calc(100dvh - 9dvh);
+    height: 1000px;
     background-color: rgb(60, 19, 194);
+  }
 }
-.right{
-    width: 20%;
-    height: calc(100dvh - 12dvh - 10dvh);
-    
-    background-color: red;
+.dp {
+  width: 40px;
+  height: 40px;
 }
-.playbar{
-    position: fixed;
-    width: 100%;
-    height: 10dvh;
-    bottom: 0;
-    display: flex;
-    background-color: black;
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 9dvh;
+  position: sticky;
+  backdrop-filter: blur(80px);
+  top: 0;
+}
+.input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  &::placeholder {
+    color: rgb(123, 120, 120);
+  }
+}
+.logo {
+  padding-left: 10px;
+  width: 20%;
+}
+.searchbar {
+  flex: 1;
+}
+.profile {
+  width: 20%;
+}
+.box {
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
 }
 
